@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Nickname";
+  src: url("/static/fonts/Nickname.otf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +11,9 @@
 html,
 body {
   overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 .webgl {
@@ -13,4 +21,59 @@ body {
   top: 0;
   left: 0;
   outline: none;
+  z-index: -1;
+}
+
+#title {
+  color: white;
+  margin: 0 0.4em;
+  font-family: "Nickname", sans-serif;
+  font-weight: 500;
+  font-size: 2.5em;
+  line-height: 0.7em;
+}
+
+#fantastic {
+  font-size: 0.4em;
+}
+
+#help {
+  position: absolute;
+  left: 2em;
+  bottom: 2em;
+  color: rgb(39, 39, 39);
+  background-color: ghostwhite;
+  border-radius: 50px;
+  width: 14em;
+  height: 7em;
+  padding: 0.7em;
+  opacity: 0.9;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#close {
+  position: absolute;
+  right: -0.5em;
+  top: -0.5em;
+  width: 1.8em;
+  height: 1.8em;
+  background-color: rgb(223, 223, 223);
+  color: rgb(39, 39, 39);
+  font-size: 1.4em;
+  line-height: 1.8em;
+  border-radius: 50%;
+}
+
+#close:hover {
+  color: white;
+  background-color: rgb(176, 176, 176);
+  cursor: pointer;
 }
