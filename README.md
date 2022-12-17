@@ -7,17 +7,19 @@
 An example of basic character and camera movement in [Three.js](https://threejs.org/).
 
 ## How to Play
-| Action           | Buttons       |
-| ---------------- |:-------------:|
-| **Walk**        | Arrows        |
-| **Run**          | Arrows + Ctrl |
-| **Look Around** | Space         |
 
+| Action          |    Buttons    |
+| --------------- | :-----------: |
+| **Walk**        |    Arrows     |
+| **Run**         | Arrows + Ctrl |
+| **Look Around** |     Space     |
+| **Show Help**   |       I       |
 
 ## Setup
+
 First, you need to download and install [Node.js](https://nodejs.org/en/download/). Then, clone or download the project, and while inside its main folder run the following commands:
 
-``` bash
+```bash
 # Install dependencies (only the first time)
 npm install
 
@@ -29,10 +31,12 @@ npm run build
 ```
 
 ## Plans
+
 - Implement running (listening to multiple keys pressed events)
 - Add instructions modal
 - Smoother animations
 - Add more objects
 
 ## License
+
 [MIT License](https://opensource.org/licenses/MIT)

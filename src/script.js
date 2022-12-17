@@ -264,5 +264,50 @@ const animate = () => {
 animate();
 
 /**
- * Instructions modal
+ * Help box
  */
+const help = document.createElement("div");
+help.setAttribute("id", "help");
+
+const walkText = document.createElement("p");
+walkText.innerText = `WALK: Arrows`;
+help.appendChild(walkText);
+
+const runText = document.createElement("p");
+runText.innerText = `RUN: Arrows + Ctrl`;
+help.appendChild(runText);
+
+const lookAroundText = document.createElement("p");
+lookAroundText.innerText = `LOOK AROUND: Space`;
+help.appendChild(lookAroundText);
+
+const close = document.createElement("div");
+close.setAttribute("id", "close");
+close.innerText = `✕`;
+
+close.addEventListener("click", () => {
+  help.style.opacity = 0;
+  helpShown = false;
+});
+
+document.addEventListener("keydown", (e) => {
+  console.log(e);
+  if (e.key === "i" || e.key === "I" || e.key === "Ι" || e.key === "ι") {
+    help.style.opacity = 1;
+  }
+});
+
+help.appendChild(close);
+document.body.appendChild(help);
+
+/**
+ * Title
+ */
+const title = document.createElement("h1");
+title.setAttribute("id", "title");
+title.innerHTML = `
+<span id="fantastic">( Not so Fantastic )</span>
+<br>
+Mr. Fox
+`;
+document.body.appendChild(title);
