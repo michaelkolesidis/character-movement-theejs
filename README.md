@@ -2,6 +2,8 @@
 
 ![screenshot](./screenshots/screenshot-01.png)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/30ec6d32-aba7-49e0-bffb-8e5322d1ade2/deploy-status)](https://app.netlify.com/sites/character-movement/deploys)
+
 An example of basic character and camera movement in [Three.js](https://threejs.org/).
 
 ## How to Play
